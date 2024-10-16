@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "src",
+    "module": "ESNext",
+    "types": ["node"],
+    "target": "ESNext",
+    "declaration": true, // 生成 .d.ts 声明文件
+    "declarationDir": "dist/types", // 将声明文件放入 dist/types 目录
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "downlevelIteration": true // 允许在较低目标版本中使用迭代器
+  }
+}
